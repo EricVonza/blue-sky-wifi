@@ -52,14 +52,24 @@ const Index = () => {
         {/* Header */}
         <header className="bg-card border-b border-border shadow-sm">
           <div className="container mx-auto px-4 py-6">
-            <div className="flex items-center justify-center gap-3">
-              <div className="bg-wifi-gradient rounded-full p-3">
-                <Wifi className="h-8 w-8 text-primary-foreground" />
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="bg-wifi-gradient rounded-full p-3">
+                  <Wifi className="h-8 w-8 text-primary-foreground" />
+                </div>
+                <div>
+                  <h1 className="text-2xl font-bold text-foreground">WiFi Portal</h1>
+                  <p className="text-muted-foreground">High-speed internet access</p>
+                </div>
               </div>
-              <div>
-                <h1 className="text-2xl font-bold text-foreground">WiFi Portal</h1>
-                <p className="text-muted-foreground">High-speed internet access</p>
-              </div>
+              
+              {/* Admin Button */}
+              <a 
+                href="/admin"
+                className="px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium"
+              >
+                Admin Panel
+              </a>
             </div>
           </div>
         </header>
