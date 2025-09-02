@@ -63,13 +63,13 @@ const Index = () => {
                 </div>
               </div>
               
-              {/* Admin Button 
+              {/* Admin Button */}
               <a 
                 href="/admin"
                 className="px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium"
               >
                 Admin Panel
-              </a> */}  
+              </a>   
             </div>
           </div>
         </header>
