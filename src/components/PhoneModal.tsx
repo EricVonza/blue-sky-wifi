@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Smartphone, Wifi } from "lucide-react";
+import LipaLogo from "../assets/lipa-na-mpesa.png"; 
 
 interface PhoneModalProps {
   isOpen: boolean;
@@ -13,12 +14,12 @@ interface PhoneModalProps {
   isLoading: boolean;
 }
 
-export const PhoneModal = ({ 
-  isOpen, 
-  onClose, 
-  onPayment, 
-  selectedPackage, 
-  isLoading 
+export const PhoneModal = ({
+  isOpen,
+  onClose,
+  onPayment,
+  selectedPackage,
+  isLoading,
 }: PhoneModalProps) => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
@@ -39,13 +40,26 @@ export const PhoneModal = ({
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
       <DialogContent className="sm:max-w-md animate-scale-in">
-        <DialogHeader>
+        <DialogHeader className="flex flex-col items-center">
+          
+
+          {/* Lipa na M-PESA Logo */}
+          <div className="mt-2">
+            <img
+              src={LipaLogo}
+              alt="Lipa na M-PESA"
+              width={160}
+              height={40}
+              className="object-contain"
+            />
+          </div>
+          <br></br>
           <DialogTitle className="flex items-center gap-2 text-primary">
             <Wifi className="h-5 w-5" />
             Complete Your WiFi Purchase
           </DialogTitle>
         </DialogHeader>
-        
+
         {selectedPackage && (
           <div className="bg-accent rounded-lg p-4 mb-4">
             <div className="flex justify-between items-center">
@@ -58,7 +72,7 @@ export const PhoneModal = ({
             </div>
           </div>
         )}
-        
+
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="phone" className="flex items-center gap-2">
@@ -79,7 +93,7 @@ export const PhoneModal = ({
               Enter your M-Pesa number to complete payment
             </p>
           </div>
-          
+
           <div className="flex gap-3 pt-4">
             <Button
               type="button"

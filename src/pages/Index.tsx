@@ -63,13 +63,13 @@ const Index = () => {
                 </div>
               </div>
               
-              {/* Admin Button */}
+              {/* Admin Button 
               <a 
                 href="/admin"
                 className="px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium"
               >
                 Admin Panel
-              </a>
+              </a> */}  
             </div>
           </div>
         </header>
@@ -78,16 +78,7 @@ const Index = () => {
         <main className="container mx-auto px-4 py-12">
           {/* Welcome Section */}
           <div className="text-center mb-12">
-            <div className="flex justify-center gap-2 mb-6">
-              <div className="flex items-center gap-2 bg-accent px-4 py-2 rounded-full">
-                <Signal className="h-4 w-4 text-primary animate-pulse" />
-                <span className="text-sm font-medium text-accent-foreground">Strong Signal</span>
-              </div>
-              <div className="flex items-center gap-2 bg-accent px-4 py-2 rounded-full">
-                <Globe className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium text-accent-foreground">Worldwide Access</span>
-              </div>
-            </div>
+           
             
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Choose Your 
@@ -114,29 +105,9 @@ const Index = () => {
           {/* Features */}
           <div className="mt-16 text-center">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="p-6">
-                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Wifi className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="font-semibold text-foreground mb-2">High-Speed Connection</h3>
-                <p className="text-muted-foreground">Enjoy blazing fast internet speeds for all your browsing needs</p>
-              </div>
               
-              <div className="p-6">
-                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Signal className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="font-semibold text-foreground mb-2">Strong Signal</h3>
-                <p className="text-muted-foreground">Reliable connection with excellent coverage throughout the area</p>
-              </div>
               
-              <div className="p-6">
-                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Globe className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="font-semibold text-foreground mb-2">Global Access</h3>
-                <p className="text-muted-foreground">Access any website and service from anywhere in the world</p>
-              </div>
+              
             </div>
           </div>
         </main>
